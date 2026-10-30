@@ -1,0 +1,6 @@
+build/
+dist/
+*.zip
+*.o
+*.obj
+*.exe

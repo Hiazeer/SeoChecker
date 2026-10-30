@@ -1,0 +1,33 @@
+SEO CHECKER 1.0 — plugin d'analyse SEO on-page pour Notepad++ (64 bits)
+========================================================================
+
+INSTALLATION
+1. Fermez Notepad++.
+2. Copiez le dossier "SeoChecker" (celui qui contient SeoChecker.dll) dans :
+      C:\Program Files\Notepad++\plugins\
+   Résultat attendu :
+      C:\Program Files\Notepad++\plugins\SeoChecker\SeoChecker.dll
+   (Windows demandera les droits administrateur.)
+3. Relancez Notepad++ : menu Modules > SEO Checker.
+
+UTILISATION
+- Ouvrez une page (HTML, Markdown ou texte) puis Modules > SEO Checker > Panneau SEO.
+- Pour fixer le mot-clé cible, mettez en tête du fichier :
+      <!-- seo: motcle=location vélo annecy | domaine=monsite.fr -->
+  motcle  = expression visée
+  domaine = votre site, pour classer les liens internes/externes
+  (La commande "Insérer l'en-tête SEO" l'ajoute pour vous.)
+- "Analyser une URL" télécharge une page en ligne et l'analyse (le mot-clé est pris
+  dans l'en-tête de la page, sinon dans celui du fichier ouvert dans Notepad++).
+- "Rapport détaillé" ouvre une page HTML lisible dans votre navigateur.
+
+RACCOURCIS (Ctrl+Alt+Maj + lettre, modifiables dans Paramètres > Raccourcis clavier)
+  E  Panneau SEO          A  Analyser le fichier
+  U  Analyser une URL     R  Rapport détaillé
+
+CONTRÔLES
+  Title (longueur, mot-clé), meta description, structure Hn, présence et densité
+  du mot-clé, lisibilité (longueur des phrases), nombre de mots, ratio texte/code,
+  liens internes/externes, images sans attribut alt. Un score sur 100 est calculé.
+
+Essayez avec le fichier exemple.html fourni.
